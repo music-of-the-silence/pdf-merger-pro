@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF Merger Pro - Features</title>
+    <link rel="icon" href="../assets/images/pdf.png" type="image/png">
+    <link rel="stylesheet" href="../styles/style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"
+        integrity="sha256-lSjKY0/srUM9BE3dPm+c4fBo1dky2v27Gdjm2uoZaL0=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="../index.html" class="nav-brand">
+                <img src="../assets/images/pdf.png" alt="PDF Merger Pro Logo" class="nav-icon" />
+                <span class="nav-title">PDF Merger Pro</span>
+            </a>
+            <div class="nav-menu">
+                <a href="../index.html" class="nav-link">Home</a>
+                <a href="features.html" class="nav-link active">Features</a>
+                <a href="help.html" class="nav-link">Help</a>
+                <a href="about.html" class="nav-link">About</a>
+            </div>
+            <div class="nav-controls">
+                <div class="theme-toggle" title="Toggle Theme">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+                    </svg>
+                </div>
+            </div>
+            <div class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <section id="features">
+            <div class="header">
+                <h1>Features</h1>
+                <p>Discover the powerful capabilities of PDF Merger Pro</p>
+            </div>
+
+            <div class="main-content">
+                <div class="feature-cards">
+                    <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="card-icon">🎯</div>
+                        <h3>Precise Page Selection</h3>
+                        <p>Choose exactly which pages you want from each PDF file. Use visual checkboxes or text input
+                            for quick selection. Support for ranges (1-5), individual pages (1,3,5), and mixed formats.
+                        </p>
+                    </div>
+                    <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="card-icon">⚡</div>
+                        <h3>Lightning Fast</h3>
+                        <p>Process your PDFs instantly in the browser. No uploads to external servers - your files stay
+                            private and secure. Built with PDF-lib for optimal performance and reliability.</p>
+                    </div>
+                    <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="card-icon">🔒</div>
+                        <h3>100% Secure</h3>
+                        <p>Your PDF files are processed locally in your browser. No data is sent to any server -
+                            complete privacy guaranteed. Your documents never leave your device.</p>
+                    </div>
+                    <div class="feature-card" data-aos="fade-up" data-aos-delay="400">
+                        <div class="card-icon">📱</div>
+                        <h3>Mobile Friendly</h3>
+                        <p>Works perfectly on all devices - desktop, tablet, and mobile. Responsive design adapts to any
+                            screen size. Touch-friendly interface for mobile users.</p>
+                    </div>
+                    <div class="feature-card" data-aos="fade-up" data-aos-delay="500">
+                        <div class="card-icon">🎨</div>
+                        <h3>Smart Organization</h3>
+                        <p>Reorder files easily with drag-and-drop functionality. Visual feedback shows exactly what
+                            will be merged. Intuitive interface for managing multiple PDFs.</p>
+                    </div>
+                    <div class="feature-card" data-aos="fade-up" data-aos-delay="600">
+                        <div class="card-icon">💾</div>
+                        <h3>Instant Download</h3>
+                        <p>Get your merged PDF immediately after processing. No waiting, no registration, no limits.
+                            Automatic file naming with timestamps for easy organization.</p>
+                    </div>
+                    <div class="feature-card" data-aos="fade-up" data-aos-delay="700">
+                        <div class="card-icon">🎪</div>
+                        <h3>Drag & Drop</h3>
+                        <p>Simply drag and drop your PDF files into the upload area. Support for multiple file selection
+                            and batch processing. Visual feedback during upload process.</p>
+                    </div>
+                    <div class="feature-card" data-aos="fade-up" data-aos-delay="800">
+                        <div class="card-icon">🔧</div>
+                        <h3>Advanced Controls</h3>
+                        <p>Select all or deselect all pages with one click. Move files up and down to change merge
+                            order. Remove individual files or clear everything at once.</p>
+                    </div>
+                    <div class="feature-card" data-aos="fade-up" data-aos-delay="900">
+                        <div class="card-icon">📊</div>
+                        <h3>Progress Tracking</h3>
+                        <p>Real-time progress bar shows merge status. Detailed status messages keep you informed. Error
+                            handling with helpful feedback messages.</p>
+                    </div>
+                </div>
+
+                <div class="features-cta">
+                    <h2>Ready to Get Started?</h2>
+                    <p>Experience the power of professional PDF merging with precision control.</p>
+                    <a href="../index.html" class="btn btn-primary">Start Merging PDFs</a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <div class="footer-brand">
+                    <img src="../assets/images/pdf.png" alt="PDF Merger Pro Logo" class="nav-icon" />
+                    <span class="footer-title">PDF Merger Pro</span>
+                </div>
+                <p class="footer-description">
+                    Professional PDF merging tool with precise page selection and local processing for maximum privacy
+                    and security.
+                </p>
+                <div class="footer-social">
+                    <a href="https://x.com/ChandanNat30376" class="social-link"><i
+                            class="fa-brands fa-x-twitter"></i></a>
+                    <a href="https://www.facebook.com/antaheenopekkhok" class="social-link"><i
+                            class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://www.linkedin.com/in/chandan-nath-189081223/" class="social-link"><i
+                            class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://github.com/music-of-the-silence" class="social-link"><i
+                            class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../html/features.html">Features</a></li>
+                    <li><a href="../html/help.html">Help</a></li>
+                    <li><a href="../html/about.html">About</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Features</h3>
+                <ul class="footer-links">
+                    <li>Page Selection</li>
+                    <li>File Reordering</li>
+                    <li>Local Processing</li>
+                    <li>Instant Download</li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Support</h3>
+                <ul class="footer-links">
+                    <li><a href="../html/help.html">User Guide</a></li>
+                    <li><a href="../html/help.html#faq">FAQ</a></li>
+                    <li><a href="../html/about.html#contact">Contact</a></li>
+                    <li><a href="../html/privacy-policy.html">Privacy Policy</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="footer-bottom-content">
+                <p>&copy; 2024 PDF Merger Pro. All rights reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="../html/privacy-policy.html">Privacy Policy</a>
+                    <a href="../html/terms-of-service.html">Terms of Service</a>
+                    <a href="../html/cookie-policy.html">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="../js/app.js"></script>
+    <script type="module" src="../js/script.js"></script>
+    <script src="../js/animations.js"></script>
+    <script src="../js/cookies.js"></script>
+    <script src="../js/themes.js"></script>
+
+</body>
+</html>

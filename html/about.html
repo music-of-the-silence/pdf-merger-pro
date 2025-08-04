@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF Merger Pro - About</title>
+    <link rel="icon" href="../assets/images/pdf.png" type="image/png">
+    <link rel="stylesheet" href="../styles/style.css">
+    <style>
+        /* Contact Section Styles */
+        .contact-section {
+            padding: 1rem 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .contact-section .container {
+            padding: 2rem 3rem;
+        }
+
+        .contact-section .section-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .contact-section .section-header h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: var(--text-primary);
+            position: relative;
+            display: inline-block;
+        }
+
+        .contact-section .section-header h2::after {
+            content: '';
+            position: absolute;
+            width: 60px;
+            height: 3px;
+            background: var(--accent-primary);
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            border-radius: 2px;
+        }
+
+        .contact-section .section-header p {
+            color: var(--text-muted);
+            font-size: 1.1rem;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .contact-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .contact-info {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1.5rem;
+        }
+
+        .contact-card {
+            background: var(--bg-primary);
+            border-radius: 10px;
+            padding: 2rem;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease;
+            border: 1px solid var(--border-primary);
+            height: 100%;
+        }
+
+        .contact-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+            border-color: var(--accent-primary);
+        }
+
+        .contact-icon {
+            font-size: 2rem;
+            color: var(--accent-primary);
+            margin-bottom: 1.2rem;
+            width: 60px;
+            height: 60px;
+            background: rgba(79, 70, 229, 0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+        }
+
+        .contact-card:hover .contact-icon {
+            background: var(--accent-primary);
+            color: white;
+            transform: rotate(5deg) scale(1.1);
+        }
+
+        .contact-card h3 {
+            font-size: 1.4rem;
+            margin-bottom: 0.8rem;
+            color: var(--text-primary);
+        }
+
+        .contact-card p {
+            color: var(--text-muted);
+            margin-bottom: 1.5rem;
+            line-height: 1.6;
+        }
+
+        .contact-link {
+            display: inline-flex;
+            align-items: center;
+            color: var(--accent-primary);
+            font-weight: 500;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .contact-link i {
+            margin-left: 0.5rem;
+            transition: transform 0.3s ease;
+        }
+
+        .contact-link:hover {
+            color: var(--accent-hover);
+        }
+
+        .contact-link:hover i {
+            transform: translateX(5px);
+        }
+
+        .social-connect {
+            background: var(--bg-primary);
+            border-radius: 10px;
+            padding: 2.5rem;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            border: 1px solid var(--border-primary);
+            height: fit-content;
+            position: sticky;
+            top: 2rem;
+        }
+
+        .social-connect h3 {
+            font-size: 1.6rem;
+            margin-bottom: 1rem;
+            color: var(--text-primary);
+        }
+
+        .social-connect p {
+            color: var(--text-muted);
+            margin-bottom: 1.5rem;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .social-icon {
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            background: var(--bg-secondary);
+            color: var(--text-muted);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            transition: all 0.3s ease;
+            border: 1px solid var(--border-primary);
+        }
+
+        .social-icon:hover {
+            background: var(--accent-primary);
+            color: white;
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(79, 70, 229, 0.3);
+        }
+
+        @media (max-width: 992px) {
+            .contact-content {
+                grid-template-columns: 1fr;
+            }
+
+            .social-connect {
+                margin-top: 2rem;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .contact-section {
+                padding: 3rem 0;
+            }
+
+            .contact-section .section-header h2 {
+                font-size: 2rem;
+            }
+
+            .contact-card, .social-connect {
+                padding: 1.5rem;
+            }
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"
+        integrity="sha256-lSjKY0/srUM9BE3dPm+c4fBo1dky2v27Gdjm2uoZaL0=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="../index.html" class="nav-brand">
+                <img src="../assets/images/pdf.png" alt="PDF Merger Pro Logo" class="nav-icon" />
+                <span class="nav-title">PDF Merger Pro</span>
+            </a>
+            <div class="nav-menu">
+                <a href="../index.html" class="nav-link">Home</a>
+                <a href="features.html" class="nav-link">Features</a>
+                <a href="help.html" class="nav-link">Help</a>
+                <a href="about.html" class="nav-link active">About</a>
+            </div>
+            <div class="nav-controls">
+                <div class="theme-toggle" title="Toggle Theme">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+                    </svg>
+                </div>
+            </div>
+            <div class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <section id="about">
+            <div class="header">
+                <h1>About PDF Merger Pro</h1>
+                <p>Learn more about our mission and technology</p>
+            </div>
+
+            <div class="main-content">
+                <div class="about-content">
+                    <div class="about-intro">
+                        <h2>Our Mission</h2>
+                        <p>PDF Merger Pro is a powerful, privacy-focused tool that allows you to combine specific pages
+                            from multiple PDF files with precision control. Built with modern web technologies, it
+                            processes all files locally in your browser, ensuring your documents remain completely
+                            private and secure.</p>
+                        <p>We believe that document processing should be fast, secure, and accessible to everyone.
+                            That's why we've created a tool that works entirely in your browser - no uploads, no
+                            registration, no limits.</p>
+                    </div>
+
+                    <div class="about-features">
+                        <h2>Why Choose PDF Merger Pro?</h2>
+                        <div class="about-features-grid">
+                            <div class="about-feature">
+                                <div class="feature-icon">🔒</div>
+                                <h3>Privacy First</h3>
+                                <p>No files are uploaded to external servers. Everything is processed locally in your
+                                    browser, ensuring complete privacy and security of your documents.</p>
+                            </div>
+                            <div class="about-feature">
+                                <div class="feature-icon">⚡</div>
+                                <h3>Fast & Efficient</h3>
+                                <p>Built with PDF-lib for optimal performance and reliability. Process multiple PDFs
+                                    quickly with real-time progress tracking.</p>
+                            </div>
+                            <div class="about-feature">
+                                <div class="feature-icon">📱</div>
+                                <h3>Cross-Platform</h3>
+                                <p>Works on all modern browsers and devices without any installation required.
+                                    Responsive design adapts to any screen size.</p>
+                            </div>
+                            <div class="about-feature">
+                                <div class="feature-icon">🎯</div>
+                                <h3>Precision Control</h3>
+                                <p>Choose exactly which pages you want from each PDF. Support for ranges, individual
+                                    pages, and mixed selection formats.</p>
+                            </div>
+                            <div class="about-feature">
+                                <div class="feature-icon">🔄</div>
+                                <h3>Smart Organization</h3>
+                                <p>Reorder files easily, preview selections, and manage multiple PDFs with an intuitive
+                                    interface designed for efficiency.</p>
+                            </div>
+                            <div class="about-feature">
+                                <div class="feature-icon">💾</div>
+                                <h3>Instant Results</h3>
+                                <p>Get your merged PDF immediately after processing. No waiting, no registration, no
+                                    limits - just fast, reliable results.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="about-technology">
+                        <h2>Technology</h2>
+                        <div class="tech-grid">
+                            <div class="tech-item">
+                                <h3>Frontend</h3>
+                                <ul>
+                                    <li>HTML5 & CSS3</li>
+                                    <li>Vanilla JavaScript</li>
+                                    <li>Responsive Design</li>
+                                    <li>Modern UI/UX</li>
+                                </ul>
+                            </div>
+                            <div class="tech-item">
+                                <h3>PDF Processing</h3>
+                                <ul>
+                                    <li>PDF-lib Library</li>
+                                    <li>Client-side Processing</li>
+                                    <li>Local File Handling</li>
+                                    <li>Cross-browser Support</li>
+                                </ul>
+                            </div>
+                            <div class="tech-item">
+                                <h3>Security</h3>
+                                <ul>
+                                    <li>Local Processing</li>
+                                    <li>No Server Uploads</li>
+                                    <li>Privacy Protection</li>
+                                    <li>Secure Downloads</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="about-stats">
+                        <h2>Why Users Trust Us</h2>
+                        <div class="stats-grid">
+                            <div class="stat-item">
+                                <div class="stat-number">100%</div>
+                                <div class="stat-label">Local Processing</div>
+                                <p>All files processed in your browser</p>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number">0</div>
+                                <div class="stat-label">File Uploads</div>
+                                <p>Your files never leave your device</p>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number">∞</div>
+                                <div class="stat-label">No Limits</div>
+                                <p>Merge as many files as you need</p>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number">24/7</div>
+                                <div class="stat-label">Available</div>
+                                <p>Use anytime, anywhere</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="about-cta">
+                        <h2>Ready to Experience the Difference?</h2>
+                        <p>Join thousands of users who trust PDF Merger Pro for their document processing needs.</p>
+                        <div class="cta-buttons">
+                            <a href="../index.html" class="btn btn-primary">Start Merging PDFs</a>
+                            <a href="features.html" class="btn btn-secondary">View Features</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Get In Touch</h2>
+                <p>Have questions or feedback? We'd love to hear from you!</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <h3>Email Us</h3>
+                        <p>contact@pdfmergerpro.com</p>
+                        <a href="mailto:contact@pdfmergerpro.com" class="contact-link">Send Message <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-comment-dots"></i>
+                        </div>
+                        <h3>Live Chat</h3>
+                        <p>Available 24/7 for your convenience</p>
+                        <a href="#" class="contact-link">Start Chat <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-question-circle"></i>
+                        </div>
+                        <h3>Help Center</h3>
+                        <p>Find answers to common questions</p>
+                        <a href="help.html" class="contact-link">Visit Help Center <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="social-connect">
+                    <h3>Connect With Us</h3>
+                    <p>Follow us on social media for updates and tips</p>
+                    <div class="social-links">
+                        <a href="https://x.com/ChandanNat30376" class="social-icon" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+                            <i class="fab fa-x-twitter"></i>
+                        </a>
+                        <a href="https://www.facebook.com/antaheenopekkhok" class="social-icon" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/chandan-nath-189081223/" class="social-icon" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://github.com/music-of-the-silence" class="social-icon" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <div class="footer-brand">
+                    <img src="../assets/images/pdf.png" alt="PDF Merger Pro Logo" class="nav-icon" />
+                    <span class="footer-title">PDF Merger Pro</span>
+                </div>
+                <p class="footer-description">
+                    Professional PDF merging tool with precise page selection and local processing for maximum privacy
+                    and security.
+                </p>
+                <div class="footer-social">
+                    <a href="https://x.com/ChandanNat30376" class="social-link"><i
+                            class="fa-brands fa-x-twitter"></i></a>
+                    <a href="https://www.facebook.com/antaheenopekkhok" class="social-link"><i
+                            class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://www.linkedin.com/in/chandan-nath-189081223/" class="social-link"><i
+                            class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://github.com/music-of-the-silence" class="social-link"><i
+                            class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="features.html">Features</a></li>
+                    <li><a href="help.html">Help</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Features</h3>
+                <ul class="footer-links">
+                    <li>Page Selection</li>
+                    <li>File Reordering</li>
+                    <li>Local Processing</li>
+                    <li>Instant Download</li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Support</h3>
+                <ul class="footer-links">
+                    <li><a href="help.html">User Guide</a></li>
+                    <li><a href="help.html#faq">FAQ</a></li>
+                    <li><a href="about.html#contact">Contact</a></li>
+                    <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="footer-bottom-content">
+                <p>&copy; 2024 PDF Merger Pro. All rights reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="privacy-policy.html">Privacy Policy</a>
+                    <a href="terms-of-service.html">Terms of Service</a>
+                    <a href="cookie-policy.html">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="../js/app.js"></script>
+    <script type="module" src="../js/script.js"></script>
+    <script src="../js/animations.js"></script>
+    <script src="../js/cookies.js"></script>
+    <script src="../js/themes.js"></script>
+
+</body>
+</html>

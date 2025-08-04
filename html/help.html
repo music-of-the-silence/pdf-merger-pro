@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF Merger Pro - Help</title>
+    <link rel="icon" href="../assets/images/pdf.png" type="image/png">
+    <link rel="stylesheet" href="../styles/style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js" integrity="sha256-lSjKY0/srUM9BE3dPm+c4fBo1dky2v27Gdjm2uoZaL0=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+                           <a href="../index.html" class="nav-brand">
+                <img src="../assets/images/pdf.png" alt="PDF Merger Pro Logo" class="nav-icon" />
+                   <span class="nav-title">PDF Merger Pro</span>
+               </a>
+                         <div class="nav-menu">
+                 <a href="../index.html" class="nav-link">Home</a>
+                 <a href="features.html" class="nav-link">Features</a>
+                 <a href="help.html" class="nav-link active">Help</a>
+                 <a href="about.html" class="nav-link">About</a>
+             </div>
+             <div class="nav-controls">
+                 <div class="theme-toggle" title="Toggle Theme">
+                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+                     </svg>
+                 </div>
+             </div>
+             <div class="nav-toggle" id="navToggle">
+                 <span></span>
+                 <span></span>
+                 <span></span>
+             </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <section id="help">
+            <div class="header">
+                <h1>Help & User Guide</h1>
+                <p>Learn how to use PDF Merger Pro effectively</p>
+            </div>
+
+            <div class="main-content">
+                <div class="help-content">
+                    <h2>How to Use PDF Merger Pro</h2>
+                    <div class="help-steps">
+                        <div class="help-step">
+                            <div class="step-number">1</div>
+                            <div class="step-content">
+                                <h3>Upload PDF Files</h3>
+                                <p>Drag and drop your PDF files into the upload area or click to browse and select multiple files. You can select multiple PDFs at once from your file browser.</p>
+                            </div>
+                        </div>
+                        <div class="help-step">
+                            <div class="step-number">2</div>
+                            <div class="step-content">
+                                <h3>Select Pages</h3>
+                                <p>Choose which pages you want from each PDF using the visual checkboxes or text input. Use formats like "1-5" (pages 1 to 5), "1,3,5" (specific pages), or "1-3,7-9" (ranges).</p>
+                            </div>
+                        </div>
+                        <div class="help-step">
+                            <div class="step-number">3</div>
+                            <div class="step-content">
+                                <h3>Reorder Files</h3>
+                                <p>Use the up/down arrows to change the order of files in your merged PDF. The order shown in the interface will be the order in your final merged document.</p>
+                            </div>
+                        </div>
+                        <div class="help-step">
+                            <div class="step-number">4</div>
+                            <div class="step-content">
+                                <h3>Merge & Download</h3>
+                                <p>Click "Merge Selected Pages" to create your combined PDF and download it instantly. The file will be automatically named with the current date.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="help-faq">
+                        <h2>Frequently Asked Questions</h2>
+                        
+                        <div class="faq-item">
+                            <div class="faq-question" tabindex="0" role="button" aria-expanded="false">
+                                <h3>What file formats are supported?</h3>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Currently, PDF Merger Pro only supports PDF files. Make sure your files are in PDF format before uploading.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="faq-item">
+                            <div class="faq-question" tabindex="0" role="button" aria-expanded="false">
+                                <h3>Is there a file size limit?</h3>
+                            </div>
+                            <div class="faq-answer">
+                                <p>There's no strict file size limit, but very large files may take longer to process. For best performance, we recommend files under 50MB each.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="faq-item">
+                            <div class="faq-question" tabindex="0" role="button" aria-expanded="false">
+                                <h3>Is my data secure?</h3>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Yes! All file processing happens directly in your browser. Your files never leave your computer and are not uploaded to any servers.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="faq-item">
+                            <div class="faq-question" tabindex="0" role="button" aria-expanded="false">
+                                <h3>Can I use this on mobile?</h3>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Absolutely! You can upload and merge multiple PDF files simultaneously. There's no limit to the number of files you can process.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="faq-item">
+                            <div class="faq-question" tabindex="0" role="button" aria-expanded="false">
+                                <h3>What if I make a mistake?</h3>
+                            </div>
+                            <div class="faq-answer">
+                                <p>You can easily remove individual files using the "✕" button, or clear all files with the "Clear All" button. You can also reorder files using the up/down arrows.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="faq-item">
+                            <div class="faq-question" tabindex="0" role="button" aria-expanded="false">
+                                <h3>Does it work on mobile devices?</h3>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Yes! PDF Merger Pro is fully responsive and works on all devices including smartphones and tablets.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="faq-item">
+                            <div class="faq-question" tabindex="0" role="button" aria-expanded="false">
+                                <h3>Is this service free?</h3>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Yes, PDF Merger Pro is completely free to use with no hidden charges or watermarks on your documents.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="help-tips">
+                        <h2>Pro Tips</h2>
+                        <div class="tips-grid">
+                            <div class="tip-item">
+                                <div class="tip-icon">💡</div>
+                                <h4>Use Page Ranges</h4>
+                                <p>Instead of selecting individual pages, use ranges like "1-10" to quickly select multiple consecutive pages.</p>
+                            </div>
+                            <div class="tip-item">
+                                <div class="tip-icon">⚡</div>
+                                <h4>Batch Processing</h4>
+                                <p>Upload all your PDFs at once, then configure page selection for each file before merging.</p>
+                            </div>
+                            <div class="tip-item">
+                                <div class="tip-icon">🎯</div>
+                                <h4>Preview Selection</h4>
+                                <p>Use the "Select All" and "Deselect All" buttons to quickly toggle page selection for each file.</p>
+                            </div>
+                            <div class="tip-item">
+                                <div class="tip-icon">📱</div>
+                                <h4>Mobile Friendly</h4>
+                                <p>On mobile devices, tap the upload area to open the file browser and select your PDFs.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="help-cta">
+                        <h2>Ready to Try It Out?</h2>
+                        <p>Now that you know how to use PDF Merger Pro, start merging your PDFs!</p>
+                        <a href="../index.html" class="btn btn-primary">Start Merging PDFs</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                                 <div class="footer-brand">
+                    <img src="../assets/images/pdf.png" alt="PDF Merger Pro Logo" class="nav-icon" />
+                     <span class="footer-title">PDF Merger Pro</span>
+                 </div>
+                <p class="footer-description">
+                    Professional PDF merging tool with precise page selection and local processing for maximum privacy and security.
+                </p>
+                <div class="footer-social">
+                    <a href="https://x.com/ChandanNat30376" class="social-link"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="https://www.facebook.com/antaheenopekkhok" class="social-link"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://www.linkedin.com/in/chandan-nath-189081223/" class="social-link"><i
+                            class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://github.com/music-of-the-silence" class="social-link"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="features.html">Features</a></li>
+                    <li><a href="help.html">Help</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Features</h3>
+                <ul class="footer-links">
+                    <li>Page Selection</li>
+                    <li>File Reordering</li>
+                    <li>Local Processing</li>
+                    <li>Instant Download</li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Support</h3>
+                <ul class="footer-links">
+                    <li><a href="help.html">User Guide</a></li>
+                    <li><a href="help.html#faq">FAQ</a></li>
+                    <li><a href="about.html#contact">Contact</a></li>
+                    <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <div class="footer-bottom-content">
+                <p>&copy; 2024 PDF Merger Pro. All rights reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="privacy-policy.html">Privacy Policy</a>
+                    <a href="terms-of-service.html">Terms of Service</a>
+                    <a href="cookie-policy.html">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+         <script type="module" src="../js/app.js"></script>
+    <script type="module" src="../js/script.js"></script>
+    <script src="../js/animations.js"></script>
+    <script src="../js/cookies.js"></script>
+    <script src="../js/themes.js"></script>
+    
+    <script>
+        // Enhanced FAQ Toggle with Smooth Animations
+        document.addEventListener('DOMContentLoaded', function() {
+            const faqItems = document.querySelectorAll('.faq-item');
+            
+            faqItems.forEach((item, index) => {
+                const question = item.querySelector('.faq-question');
+                const answer = item.querySelector('.faq-answer');
+                const answerId = `faq-answer-${index}`;
+                const questionId = `faq-question-${index}`;
+                
+                // Set up ARIA attributes for accessibility
+                question.id = questionId;
+                question.setAttribute('aria-controls', answerId);
+                question.setAttribute('aria-expanded', 'false');
+                question.setAttribute('role', 'button');
+                question.setAttribute('tabindex', '0');
+                
+                answer.id = answerId;
+                answer.setAttribute('aria-labelledby', questionId);
+                answer.setAttribute('role', 'region');
+                
+                // Click handler
+                question.addEventListener('click', () => toggleFaq(item));
+                
+                // Keyboard navigation
+                question.addEventListener('keydown', (e) => {
+                    if (e.key === ' ' || e.key === 'Enter' || e.key === 'Spacebar') {
+                        e.preventDefault();
+                        toggleFaq(item);
+                    }
+                });
+                
+                // Close all FAQs when clicking outside
+                document.addEventListener('click', (e) => {
+                    if (!item.contains(e.target)) {
+                        closeFaq(item);
+                    }
+                });
+            });
+            
+            function toggleFaq(item) {
+                const isActive = item.classList.contains('active');
+                const question = item.querySelector('.faq-question');
+                const answer = item.querySelector('.faq-answer');
+                
+                // Close all other FAQs
+                document.querySelectorAll('.faq-item').forEach(otherItem => {
+                    if (otherItem !== item) {
+                        closeFaq(otherItem);
+                    }
+                });
+                
+                // Toggle current FAQ
+                if (isActive) {
+                    closeFaq(item);
+                } else {
+                    // Set initial height for smooth animation
+                    answer.style.display = 'block';
+                    const startHeight = answer.offsetHeight;
+                    answer.style.height = '0';
+                    
+                    // Trigger reflow
+                    answer.offsetHeight;
+                    
+                    // Animate open
+                    item.classList.add('active');
+                    question.setAttribute('aria-expanded', 'true');
+                    answer.style.height = startHeight + 'px';
+                    
+                    // Reset height after animation
+                    setTimeout(() => {
+                        answer.style.height = '';
+                    }, 300);
+                }
+            }
+            
+            function closeFaq(item) {
+                const question = item.querySelector('.faq-question');
+                const answer = item.querySelector('.faq-answer');
+                
+                if (item.classList.contains('active')) {
+                    // Get current height and animate to 0
+                    const startHeight = answer.offsetHeight;
+                    answer.style.height = startHeight + 'px';
+                    
+                    // Trigger reflow
+                    answer.offsetHeight;
+                    
+                    // Animate close
+                    answer.style.height = '0';
+                    
+                    // Reset after animation
+                    setTimeout(() => {
+                        item.classList.remove('active');
+                        question.setAttribute('aria-expanded', 'false');
+                        answer.style.height = '';
+                        answer.style.display = '';
+                    }, 300);
+                }
+            }
+        });
+    </script>
+</body>
+</html>
