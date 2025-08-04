@@ -6,13 +6,13 @@ A professional web application for merging PDF files with advanced features, bui
 
 ## ✨ Features
 
-* **Secure Local Processing** - All PDF operations happen in your browser; your files never leave your device
-* **Advanced Page Selection** - Choose specific pages using checkboxes or range inputs (e.g., 1,3,5-7)
-* **Intuitive Drag & Drop** - Easily reorder PDFs before merging with a simple drag-and-drop interface
-* **Multiple Themes** - Light and dark mode with automatic system preference detection
-* **Responsive Design** - Works seamlessly on desktop, tablet, and mobile devices
-* **Cookie Consent** - GDPR-compliant cookie management with user preferences
-* **Comprehensive Help** - Built-in help section and FAQ for easy guidance
+- **Secure Local Processing** - All PDF operations happen in your browser; your files never leave your device
+- **Advanced Page Selection** - Choose specific pages using checkboxes or range inputs (e.g., 1,3,5-7)
+- **Intuitive Drag & Drop** - Easily reorder PDFs before merging with a simple drag-and-drop interface
+- **Multiple Themes** - Light and dark mode with automatic system preference detection
+- **Responsive Design** - Works seamlessly on desktop, tablet, and mobile devices
+- **Cookie Consent** - GDPR-compliant cookie management with user preferences
+- **Comprehensive Help** - Built-in help section and FAQ for easy guidance
 
 ## 🚀 Getting Started
 
@@ -24,6 +24,7 @@ A professional web application for merging PDF files with advanced features, bui
 ### Quick Start
 
 1. Clone the repository:
+
    ```bash
    git clone https://github.com/yourusername/pdf-merger-pro.git
    cd pdf-merger-pro
@@ -32,6 +33,7 @@ A professional web application for merging PDF files with advanced features, bui
 2. Open `html/index.html` in your preferred web browser
 
    > For best experience, use a local web server:
+   >
    > - VS Code with Live Server extension
    > - Python: `python -m http.server 8000`
    > - Node: `npx http-server -p 8000`
@@ -39,15 +41,18 @@ A professional web application for merging PDF files with advanced features, bui
 ## 🖥️ How to Use
 
 1. **Upload PDFs**
+
    - Drag and drop files or click to browse
    - Select multiple files at once
 
 2. **Select Pages**
+
    - Check individual pages
    - Use range input for multiple pages
    - Preview pages before merging
 
 3. **Organize & Merge**
+
    - Reorder PDFs using drag handles
    - Remove unwanted files
    - Click "Merge PDFs" to process
@@ -58,14 +63,14 @@ A professional web application for merging PDF files with advanced features, bui
 
 ## 🛠️ Technical Stack
 
-| Component       | Technology |
-|-----------------|------------|
-| Frontend        | HTML5, CSS3, Vanilla JavaScript |
-| PDF Processing  | [PDF-Lib](https://github.com/Hopding/pdf-lib) |
-| UI Framework    | Custom CSS with CSS Variables |
-| Icons           | Font Awesome 6.0 |
-| Responsive Design | CSS Grid & Flexbox |
-| Local Storage   | For theme preferences and settings |
+| Component         | Technology                                    |
+| ----------------- | --------------------------------------------- |
+| Frontend          | HTML5, CSS3, Vanilla JavaScript               |
+| PDF Processing    | [PDF-Lib](https://github.com/Hopding/pdf-lib) |
+| UI Framework      | Custom CSS with CSS Variables                 |
+| Icons             | Font Awesome 6.0                              |
+| Responsive Design | CSS Grid & Flexbox                            |
+| Local Storage     | For theme preferences and settings            |
 
 ## 📂 Project Structure
 
@@ -125,7 +130,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📧 Contact
 
-For questions or support, please [contact us](mailto:contact@pdfmergerpro.com) or open an issue on GitHub.
+For questions or support, please [contact us](mailto:nath.chandan1385@gmail.com) or open an issue on GitHub.
 
 ---
 
