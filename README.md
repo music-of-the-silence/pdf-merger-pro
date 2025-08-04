@@ -130,7 +130,11 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📧 Contact
 
+<<<<<<< HEAD
 For questions or support, please [contact us](mailto:nath.chandan1385@gmail.com) or open an issue on GitHub.
+=======
+For questions or support, please [contact us](mailto:nath.chandan1385.com) or open an issue on GitHub.
+>>>>>>> 3d7048c11acbb6c5e7c4e6dbef78c097b69af10d
 
 ---
 
